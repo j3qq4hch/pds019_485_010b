@@ -53,16 +53,6 @@ eagle.epf
 .vs/*
 *.scr
 /doc/*
-/winch/docs/*
-/craft/V2/manf/
-/craft/V2.1/manf/
-/craft/V2.2/manf/
-/craft/V2.1/sim/
-/craft/V1/manf/
-/craft/battery V1/manf
-/craft/battery V1.1/manf
-/winch/discharger/manf
-/winch/Winch_controller_v2/manf
 /manf/*
 *.dtmp
 *.bkp
