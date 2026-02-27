@@ -22,3 +22,4 @@
 </p>
 
 3D модель доступна [по ссылке](https://a360.co/4bcfLyz).
+BoM доступен [по ссылке](https://docs.google.com/spreadsheets/d/1rppHGotYg97vevn0TNhSlOjf3by5jG4KPH9rv6CT_tg/edit?gid=943701483#gid=943701483).
