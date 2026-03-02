@@ -215,6 +215,10 @@
 26.02.2026</text>
 <text x="18" y="55" size="2" layer="21" font="vector" ratio="12" rot="R180" align="center">EBUCCI
 reDesign</text>
+<text x="0.6" y="87.4" size="2" layer="150" font="vector">2 layer PCB
+Copper thickness 35 uM
+Soldermask color blue
+PCB thickness 1.5 mm</text>
 </plain>
 <libraries>
 <library name="rc" urn="urn:adsk.eagle:library:2539423">

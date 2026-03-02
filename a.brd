@@ -130,7 +130,7 @@
 <layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="yes"/>
 <layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
 <layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
@@ -2184,6 +2184,10 @@ reDesign</text>
 <wire x1="28.5" y1="4.2" x2="28.5" y2="2" width="0.5" layer="21"/>
 <wire x1="28.5" y1="2" x2="28.6" y2="1.9" width="0.5" layer="21"/>
 <wire x1="28.6" y1="1.9" x2="30.6" y2="1.9" width="0.5" layer="21"/>
+<text x="0.3" y="42.9" size="2" layer="150" font="vector">2 layer PCB
+Copper thickness 35 uM
+Soldermask color blue
+PCB thickness 2 mm</text>
 </plain>
 <libraries>
 <library name="rc" urn="urn:adsk.eagle:library:2539423">
