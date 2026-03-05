@@ -3561,6 +3561,7 @@ package type OT</description>
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="basic" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -3667,7 +3668,9 @@ package type OT</description>
 <part name="CN3" library="degson" library_urn="urn:adsk.eagle:library:19760360" deviceset="CON-2P" device="-DG500-5.08" package3d_urn="urn:adsk.eagle:package:28395457/3"/>
 <part name="L3" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="L" device="-0805" package3d_urn="urn:adsk.eagle:package:32710307/2"/>
 <part name="L4" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="L" device="-0805" package3d_urn="urn:adsk.eagle:package:32710307/2"/>
-<part name="C13" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="C" device="-0805" package3d_urn="urn:adsk.eagle:package:2539460/3" value="***"/>
+<part name="C13" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="C" device="-0805" package3d_urn="urn:adsk.eagle:package:2539460/3" value="***">
+<variant name="basic" populate="no"/>
+</part>
 <part name="C14" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="C" device="-0805" package3d_urn="urn:adsk.eagle:package:2539460/3" value="0.1u"/>
 <part name="R20" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="120R"/>
 <part name="R19" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="1K"/>
@@ -3686,7 +3689,9 @@ package type OT</description>
 <part name="GND31" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="GND32" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="GND33" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="L6" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="L" device="-0805" package3d_urn="urn:adsk.eagle:package:32710307/2"/>
+<part name="L6" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="L" device="-0805" package3d_urn="urn:adsk.eagle:package:32710307/2">
+<variant name="basic" populate="no"/>
+</part>
 <part name="GND35" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="R13" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="10R"/>
 <part name="R16" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="10R"/>
@@ -3713,6 +3718,10 @@ package type OT</description>
 <text x="190.5" y="83.82" size="1.27" layer="97" font="vector">Make sure it is the right relay </text>
 <text x="88.9" y="119.38" size="1.27" layer="97" font="vector" align="center">Decoupling cap?</text>
 <text x="218.44" y="78.74" size="1.778" layer="97" font="vector" align="center">SRD-U</text>
+<text x="22.86" y="17.78" size="1.778" layer="97" font="vector" align="center">L3/L4 may be replaced
+with 0 ohm resistors</text>
+<text x="154.94" y="144.78" size="1.778" layer="97" font="vector" align="center">L1 may be replaced
+with 0 ohm resistors</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -4201,12 +4210,12 @@ package type OT</description>
 <attribute name="TOLERANCE" x="48.006" y="68.072" size="0.762" layer="96" font="vector" rot="R180"/>
 <attribute name="ALLOCATED" x="48.26" y="64.516" size="0.762" layer="97" font="vector" rot="R180" align="center"/>
 </instance>
-<instance part="C12" gate="G$1" x="33.02" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.909" y="62.23" size="1.27" layer="95" font="vector" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="32.766" y="59.69" size="0.762" layer="96" font="vector" rot="R90" align="bottom-right"/>
-<attribute name="PACKAGE" x="33.528" y="58.928" size="0.508" layer="97" font="vector" rot="R270" align="center"/>
-<attribute name="VOLTAGE" x="32.512" y="61.976" size="0.508" layer="97" font="vector" rot="R90" align="center-left"/>
-<attribute name="ALLOCATED" x="30.48" y="60.96" size="0.508" layer="97" font="vector" rot="R90" align="center"/>
+<instance part="C12" gate="G$1" x="33.02" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.909" y="59.69" size="1.27" layer="95" font="vector" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="32.766" y="57.15" size="0.762" layer="96" font="vector" rot="R90" align="bottom-right"/>
+<attribute name="PACKAGE" x="33.528" y="56.388" size="0.508" layer="97" font="vector" rot="R270" align="center"/>
+<attribute name="VOLTAGE" x="32.512" y="59.436" size="0.508" layer="97" font="vector" rot="R90" align="center-left"/>
+<attribute name="ALLOCATED" x="30.48" y="58.42" size="0.508" layer="97" font="vector" rot="R90" align="center"/>
 </instance>
 <instance part="GND36" gate="G$1" x="33.02" y="48.26" smashed="yes">
 <attribute name="VALUE" x="33.02" y="46.228" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
@@ -4335,7 +4344,7 @@ package type OT</description>
 <segment>
 <pinref part="GND36" gate="G$1" pin="GNDD"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="50.8" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="50.8" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -4943,7 +4952,7 @@ package type OT</description>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="63.5" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="60.96" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <junction x="33.02" y="66.04"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="63.5" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
@@ -4981,6 +4990,10 @@ package type OT</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
